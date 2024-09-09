@@ -1,60 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2052e598-e1d5-42ba-a6f4-7452feb60969" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GLO6002Devoir.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/main/java/org/example/Clinic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/main/java/org/example/CommunityCenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/main/java/org/example/Patient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/main/java/org/example/TriageType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/main/java/org/example/VisibleSymptom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/test/java/ClinicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src/test/java/CommunityCenterTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8c2f08bc-f1ed-4f18-bf9b-60618c6588f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/CommunityCenterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Clinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Clinic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CommunityCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CommunityCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ClinicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClinicTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "williamprevot"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/VinceGouge/GLO6002Devoir.git",
-    "accountId": "c3ea6239-a649-4b22-9241-6b35a9e31ca1"
-  }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
-  <component name="ProjectId" id="2lr2hSdLWKCLpdbVVL7xvaOFDjO" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2llMIeYBpdadPylXXjTxBYBqmcp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/prevo/IdeaProjects/GLO6002Devoir",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ClinicTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.fileESt_initiallementVide.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandDeuxPatientsPresent_deuxiemeAvecFluDevraitAjouterSecondFileDuDocSeulement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandDeuxPatientsSePresentent_leDeuxiemeAvecFluDevraitEtreAjouteSeulementDansLaFileDuDocteur.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandPatientAvecAucunOsSymptome_devraitAjouterDocteurFileSeulement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandPatientAvecFractureEtGraviteEleveeArrive_devraitEtrePremierDansDocteurEtDeuxiemeDansRadiologie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandPatientAvecOsCassseouEntorse_devraitAjouterDocteurRadiologieFiles.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandPatientGraviteInferieureOuEgaleA5_radiologieTrieParGravite_PatientDevraitEtreAjouteEnDernier.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandPatientGravitePlusEleveeArrive_docteurTrieParGravite_lePatientGraveDevraitEtrePremier.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandPatientGravitePlusEleveeQue5_docTrieParGravite_PatientGraveDevraitEtrePremier.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandPatientGravitePlusQue5_devraitEtrePremierDansFileDocEtRadiologie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClinicTest.quandpPatientAvecCoronavirus_devraitNePasEtreAjoute.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommunityCenterTest.patientAvecCoronavirus_devraitNePasEtreAjouteDansCommunityCenter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommunityCenterTest.patientSansCoronavirus_devraitEtreAjouteDansCommunityCenter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PatientTest.testGetName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PatientTest.testPatientCorrectementCree.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PatientTest.testToString.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.clinique [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="JUnit.ClinicTest">
+    <configuration name="ClinicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clinique" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClinicTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClinicTest.quandPatientGraviteInferieureOuEgaleA5_radiologieTrieParGravite_PatientDevraitEtreAjouteEnDernier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clinique" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClinicTest" />
+      <option name="METHOD_NAME" value="quandPatientGraviteInferieureOuEgaleA5_radiologieTrieParGravite_PatientDevraitEtreAjouteEnDernier" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClinicTest.quandpPatientAvecCoronavirus_devraitNePasEtreAjoute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clinique" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClinicTest" />
+      <option name="METHOD_NAME" value="quandpPatientAvecCoronavirus_devraitNePasEtreAjoute" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommunityCenterTest.patientAvecCoronavirus_devraitNePasEtreAjouteDansCommunityCenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clinique" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommunityCenterTest" />
+      <option name="METHOD_NAME" value="patientAvecCoronavirus_devraitNePasEtreAjouteDansCommunityCenter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommunityCenterTest.patientSansCoronavirus_devraitEtreAjouteDansCommunityCenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clinique" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommunityCenterTest" />
+      <option name="METHOD_NAME" value="patientSansCoronavirus_devraitEtreAjouteDansCommunityCenter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClinicTest" />
+        <item itemvalue="JUnit.CommunityCenterTest.patientAvecCoronavirus_devraitNePasEtreAjouteDansCommunityCenter" />
+        <item itemvalue="JUnit.CommunityCenterTest.patientSansCoronavirus_devraitEtreAjouteDansCommunityCenter" />
+        <item itemvalue="JUnit.ClinicTest.quandpPatientAvecCoronavirus_devraitNePasEtreAjoute" />
+        <item itemvalue="JUnit.ClinicTest.quandPatientGraviteInferieureOuEgaleA5_radiologieTrieParGravite_PatientDevraitEtreAjouteEnDernier" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,16 +139,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2052e598-e1d5-42ba-a6f4-7452feb60969" name="Changes" comment="" />
-      <created>1725923994152</created>
+      <changelist id="8c2f08bc-f1ed-4f18-bf9b-60618c6588f5" name="Changes" comment="" />
+      <created>1725750134159</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1725923994152</updated>
-      <workItem from="1725923995262" duration="37000" />
+      <updated>1725750134159</updated>
+      <workItem from="1725750135223" duration="12959000" />
+      <workItem from="1725907641081" duration="1558000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/clinique$ClinicTest_quandPatientAvecOsCassseouEntorse_devraitAjouterDocteurRadiologieFiles.ic" NAME="ClinicTest.quandPatientAvecOsCassseouEntorse_devraitAjouterDocteurRadiologieFiles Coverage Results" MODIFIED="1725752014072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
