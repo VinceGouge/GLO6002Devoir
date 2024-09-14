@@ -7,11 +7,15 @@ public class Patient {
         healthCondition = new HealthCondition(_visibleSymptom, _gravity);
     }
 
-    public boolean NeedsRadiology(){
-        return healthCondition.RequiresRadiology();
+    public boolean needsRadiology(){
+        return healthCondition.requiresRadiology();
     }
 
-    public String GetName(){
+    public int getGravity(){
+        return healthCondition.getGravity();
+    }
+
+    public String getName(){
         return name;
     }
 }

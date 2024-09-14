@@ -1,28 +1,52 @@
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Clinic {
-    public Clinic(TriageType _triageType) {
-        triageType = _triageType;
+    private List<IService> services;
+
+    private Clinic(ClinicBuilder clinicBuilder) {
+        services = clinicBuilder.services;
     }
 
     public void triagePatient(String name, int gravity, VisibleSymptom visibleSymptom) {
         Patient patient = new Patient(name, gravity, visibleSymptom);
-        doctorWaitingList.add(patient);
-        if (patient.NeedsRadiology()){
-            radiologyWaitingList.add(patient);
+        for (IService service : services){
+            service.triagePatient(patient);
         }
     }
 
-    public Patient GetNextDoctorPatient(){
-        return doctorWaitingList.poll();
+    public Patient getNextDoctorPatient(){
+        for (IService service : services){
+            if (service instanceof DoctorService){
+                return service.getNextPatient();
+            }
+        }
+
+        return null;
     }
 
-    public Patient GetNextRadiologyPatient(){
-        return radiologyWaitingList.poll();
+    public Patient getNextRadiologyPatient(){
+        for (IService service : services){
+            if (service instanceof RadiologyService){
+                return service.getNextPatient();
+            }
+        }
+
+        return null;
     }
 
-    private TriageType triageType;
-    private Queue<Patient> doctorWaitingList = new LinkedList<Patient>();
-    private Queue<Patient> radiologyWaitingList = new LinkedList<Patient>();
+    public static class ClinicBuilder {
+        private final List<IService> services = new ArrayList<>();
+
+        public ClinicBuilder() {}
+
+        public ClinicBuilder withService(IService service){
+            services.add(service);
+            return this;
+        }
+
+        public Clinic build(){
+            return new Clinic(this);
+        }
+    }
 }

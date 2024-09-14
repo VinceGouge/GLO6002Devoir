@@ -10,7 +10,11 @@ public class HealthCondition {
         gravity = _gravity;
     }
 
-    public boolean RequiresRadiology(){
+    public boolean requiresRadiology(){
         return symptomsNeedingRadiology.contains(symptom);
+    }
+
+    public int getGravity(){
+        return gravity;
     }
 }
