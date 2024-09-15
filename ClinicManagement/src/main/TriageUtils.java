@@ -3,11 +3,19 @@ import java.util.Queue;
 
 public class TriageUtils {
     public static Queue<Patient> fifo(Patient patient, Queue<Patient> queue){
+        if (patientShouldNotBeAdmitted(patient)) {
+            return queue;
+        }
+
         queue.add(patient);
         return queue;
     }
 
     public static Queue<Patient> gravity(Patient patient, Queue<Patient> queue){
+        if (patientShouldNotBeAdmitted(patient)) {
+            return queue;
+        }
+
         int gravityThreshold = 5;
         if (patient.getGravity() <= gravityThreshold){
             queue.add(patient);
@@ -18,5 +26,9 @@ public class TriageUtils {
         prioritizedQueue.add(patient);
         prioritizedQueue.addAll(queue);
         return prioritizedQueue;
+    }
+
+    private static boolean patientShouldNotBeAdmitted(Patient patient) {
+        return patient.hasCovid();
     }
 }

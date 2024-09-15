@@ -144,4 +144,22 @@ public class ClinicTests {
 
         assertEquals(secondPatientName, nextRadioPatient.getName());
     }
+
+    @Test
+    public void patientWithCovid_triagePatient_newPatientIsNotInQueue() {
+        Clinic clinic = new Clinic.ClinicBuilder()
+                .withDoctorService(TriageType.GRAVITY)
+                .withRadiologyService(TriageType.GRAVITY)
+                .build();
+
+        String patientName = "Bob";
+
+        clinic.triagePatient(patientName, 149, VisibleSymptom.CORONAVIRUS);
+
+        Patient nextDoctorPatient = clinic.getNextPatient(DoctorService.class);
+        Patient nextRadioPatient = clinic.getNextPatient(RadiologyService.class);
+
+        assertNull(nextDoctorPatient);
+        assertNull(nextRadioPatient);
+    }
 }

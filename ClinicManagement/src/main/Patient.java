@@ -18,4 +18,8 @@ public class Patient {
     public String getName(){
         return name;
     }
+
+    public boolean hasCovid() {
+        return healthCondition.getSymptom() == VisibleSymptom.CORONAVIRUS;
+    }
 }
