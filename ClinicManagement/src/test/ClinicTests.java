@@ -109,7 +109,7 @@ public class ClinicTests {
     }
 
     @Test
-    public void radiologyQueueNotEmpty_newPatientWithHighGravity_newPatientIsNotFirstInRadioQueue(){
+    public void radiologyFIFOQueueNotEmpty_newPatientWithHighGravity_newPatientIsNotFirstInRadioQueue(){
         Clinic clinic = new Clinic.ClinicBuilder()
                 .withService(new DoctorService(TriageType.GRAVITY))
                 .withService(new RadiologyService(TriageType.FIFO))
@@ -126,5 +126,22 @@ public class ClinicTests {
 
         assertNotEquals(secondPatientName, nextRadioPatient.getName());
         assertEquals(secondPatientName, secondRadioPatient.getName());
+    }
+
+    @Test
+    public void radiologyGravityQueueNotEmpty_newPatientWithHighGravity_newPatientIsFirstInRadioQueue(){
+        Clinic clinic = new Clinic.ClinicBuilder()
+                .withService(new DoctorService(TriageType.GRAVITY))
+                .withService(new RadiologyService(TriageType.GRAVITY))
+                .build();
+
+        String firstPatientName = "First";
+        String secondPatientName = "Second";
+
+        clinic.triagePatient(firstPatientName, 764, VisibleSymptom.SPRAIN);
+        clinic.triagePatient(secondPatientName, 7, VisibleSymptom.BROKEN_BONE);
+        Patient nextRadioPatient = clinic.getNextRadiologyPatient();
+
+        assertEquals(secondPatientName, nextRadioPatient.getName());
     }
 }
