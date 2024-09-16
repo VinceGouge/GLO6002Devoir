@@ -1,5 +1,5 @@
 package ClinicProject.Sorting;
 
-public enum SortingType {
+public enum TriageType {
     FIFO
 }
